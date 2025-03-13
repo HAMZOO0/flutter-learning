@@ -3,7 +3,7 @@ import 'dart:io'; // Keep only the required imports
 void main() {
   List<String> task = [];
   int? choice;
-  String? new_task;
+  String? newTask;
 
   // var chooice ?;
   while (choice != 4) {
@@ -17,17 +17,17 @@ void main() {
 
     if (choice == 1) {
       print("+ add new Task :");
-      new_task = stdin.readLineSync()!;
-      task.add(new_task);
+      newTask = stdin.readLineSync()!;
+      task.add(newTask);
     } else if (choice == 2) {
       for (var index in task) {
         print(index);
       }
     } else if (choice == 3) {
       print("Enter task number ");
-      int task_del = int.parse(stdin.readLineSync()!);
-      print("✅ Removed Task: ${task[task_del - 1]}");
-      task.removeAt(task_del - 1);
+      int taskDel = int.parse(stdin.readLineSync()!);
+      print("✅ Removed Task: ${task[taskDel - 1]}");
+      task.removeAt(taskDel - 1);
     }
   }
 }

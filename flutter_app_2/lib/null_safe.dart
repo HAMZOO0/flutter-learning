@@ -10,6 +10,6 @@ void main() {
       print("You have ${100 - age} years left you turn  100 ");
     }
   } catch (message) {
-    print("Error - > ${message}\n");
+    print("Error - > $message\n");
   }
 }
