@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, home: MyHomePage());
@@ -17,6 +19,8 @@ class MyHomePage extends StatelessWidget {
     20,
     (index) => "Item ${index + 1} - Hamza Sajid",
   );
+
+  MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +54,8 @@ class MyHomePage extends StatelessWidget {
         onPressed: () {
           print("FAB Clicked by Hamza Sajid!");
         },
-        child: Icon(Icons.add),
         backgroundColor: Colors.blueAccent,
+        child: Icon(Icons.add),
       ),
     );
   }
