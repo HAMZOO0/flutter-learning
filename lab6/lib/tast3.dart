@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,6 +27,8 @@ class DashboardScreen extends StatelessWidget {
     DashboardCard(title: 'Tasks', value: '48', icon: Icons.task),
     DashboardCard(title: 'Storage', value: '85%', icon: Icons.storage),
   ];
+
+  const DashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

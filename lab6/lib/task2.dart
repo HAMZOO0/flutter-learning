@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,6 +15,8 @@ class MyApp extends StatelessWidget {
 }
 
 class ProfileCardScreen extends StatelessWidget {
+  const ProfileCardScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +62,6 @@ class ProfileCardScreen extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {},
-                    child: Text('Follow'),
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(
                         horizontal: 24,
@@ -68,11 +71,11 @@ class ProfileCardScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
+                    child: Text('Follow'),
                   ),
                   SizedBox(width: 16),
                   OutlinedButton(
                     onPressed: () {},
-                    child: Text('Message'),
                     style: OutlinedButton.styleFrom(
                       padding: EdgeInsets.symmetric(
                         horizontal: 24,
@@ -82,6 +85,7 @@ class ProfileCardScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
+                    child: Text('Message'),
                   ),
                 ],
               ),
