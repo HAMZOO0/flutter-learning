@@ -1,0 +1,10 @@
+apply plugin: 'com.google.gms.google-services' // ADD THIS at the bottom
+
+android {
+  // ...
+  defaultConfig {
+    applicationId "com.example.firebase_app" // SAME AS IN FIREBASE CONSOLE
+    minSdkVersion 19 // Minimum 19 required for Firebase
+    // ...
+  }
+}

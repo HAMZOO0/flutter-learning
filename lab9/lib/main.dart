@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class PostListScreen extends StatefulWidget {
-  const PostListScreen({Key? key}) : super(key: key);
+  const PostListScreen({super.key});
 
   @override
   State<PostListScreen> createState() => _PostListScreenState();
